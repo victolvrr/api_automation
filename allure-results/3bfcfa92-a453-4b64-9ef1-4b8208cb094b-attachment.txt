@@ -1,0 +1,7 @@
+Última mensagem de commit: [XLA][XTile] Add xtile lowering passes for triton.
+
+This enables migrating the triton emitter to use emit xtile entry, insert & extract in the child PR.
+
+The main difference is the memref args in the entry function for which `MemrefToPtr` & `PtrToMemref` were introduced which closely resemble `UnrealizedConversionCastOp` with additional verification and will enable special folding of `memref::TransposeOp`.
+
+PiperOrigin-RevId: 821593545

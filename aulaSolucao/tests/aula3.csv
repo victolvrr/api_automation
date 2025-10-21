@@ -1,0 +1,5 @@
+title,body,userId,expected_status
+"Valid Post 1","Body of post 1",1,201
+"Valid Post 2","Body of post 2",1,201
+"Empty Title","",1,201
+"Empty Body","Body of post 3",,201
